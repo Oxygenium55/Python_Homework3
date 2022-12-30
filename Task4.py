@@ -4,5 +4,10 @@
 # 3 -> 11
 # 2 -> 10
 
-
+result = ""
+number = int(input("Введите число для преобразовывания десятичного числа в двоичное: "))
+while number != 0:
+    result = str(number % 2) + result
+    number //= 2
+print(result)
 
